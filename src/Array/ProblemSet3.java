@@ -1,6 +1,9 @@
 package Array;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 
 public class ProblemSet3 {
     public static void leftRotate(int[] nums) {
@@ -22,9 +25,40 @@ public class ProblemSet3 {
 
         System.out.println(Arrays.toString(nums));
     }
+
+    public static void reverse(int[] arr,int start,int end) {
+        while (start<end){
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;end--;
+        }
+    }
+
+    public static void rightRotateK(int[] nums,int k) {
+        k = k%(nums.length);
+        reverse(nums,0, nums.length-1);
+        reverse(nums,0, k-1);
+        reverse(nums,k, nums.length-1);
+
+        System.out.println(Arrays.toString(nums));
+    }
+
+    public static void leftRotateK(int[] nums,int k) {
+        k = k%(nums.length);
+        reverse(nums,0, k-1);
+        reverse(nums,k, nums.length-1);
+        reverse(nums,0, nums.length-1);
+
+        System.out.println(Arrays.toString(nums));
+    }
+
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6};
 //        leftRotate(arr);
-        rightRotate(arr);
+//        rightRotate(arr);
+//        rightRotateK(arr,2);
+        leftRotateK(arr,3);
+        
     }
 }
