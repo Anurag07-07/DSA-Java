@@ -27,6 +27,10 @@ public class BubbleSort {
             }
             if (!swapped) break;
         }
+
+        int[] arr = {1,1,1,1,2};
+
+
         System.out.println(Arrays.toString(nums));
     }
 }
