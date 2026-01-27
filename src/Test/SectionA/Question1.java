@@ -22,8 +22,9 @@ public class Question1 {
 
     public static void Frequency(int[] nums) {
         HashMap<Integer,Integer> hm = new HashMap<>();
-        for (int x:nums){
-            hm.put(x,hm.getOrDefault(x,0)+1);
+        for (int x:nums) {
+            hm.put(x, hm.getOrDefault(x, 0) + 1);
+        }
 
             int value = -1;
             for (Map.Entry<Integer,Integer> e : hm.entrySet()){
@@ -31,8 +32,9 @@ public class Question1 {
                     value = e.getKey();
                 }
             }
-        }
+        System.out.println(value);
     }
+
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,4,4,4,4,4};
         Frequency(arr);
