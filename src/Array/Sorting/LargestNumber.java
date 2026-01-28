@@ -17,6 +17,6 @@ public class LargestNumber {
             s.append(x);
         }
 
-        return s.toString();
+//        return s.toString();
     }
 }
