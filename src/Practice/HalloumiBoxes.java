@@ -21,7 +21,6 @@ public class HalloumiBoxes {
                     break;
                 }
             }
-
             if (isSorted){
                 System.out.println("Yes");
             }else {
