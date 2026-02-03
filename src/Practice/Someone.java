@@ -1,7 +1,7 @@
 package Practice;
 import java.util.Scanner;
 
-public class Halloumiboxes {
+public class Someone {
     public  static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

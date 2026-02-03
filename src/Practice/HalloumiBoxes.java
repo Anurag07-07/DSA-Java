@@ -1,3 +1,5 @@
+package Practice;
+
 import java.util.Scanner;
 
 public class HalloumiBoxes {
@@ -30,6 +32,5 @@ public class HalloumiBoxes {
                 }
             }
         }
-        return;
     }
 }
