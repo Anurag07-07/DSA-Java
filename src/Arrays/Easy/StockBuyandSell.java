@@ -27,7 +27,10 @@ public class StockBuyandSell {
                 i++;
             }
             Local_Minima = nums[i];
-
+//               i
+//            40 595 695
+//            local_minima = 40
+//            local_maxima = 695
             while (i<n-1 && nums[i]<=nums[i+1]){
                 i++;
             }
